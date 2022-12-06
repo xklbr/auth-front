@@ -1,0 +1,40 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "react-native/react-native": true
+  },
+  "extends": ["plugin:react/recommended", "prettier", "prettier/react"],
+  "globals": {
+    "__DEV__": "readonly"
+  },
+  "plugins": [
+    "import",
+    "react",
+    "react-native",
+    "react-hooks",
+    "react-redux",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/prop-types": [
+      "error",
+      { "ignore": ["navigation", "navigation.navigate"] }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["features/*/*"]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
