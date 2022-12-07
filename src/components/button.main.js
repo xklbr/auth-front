@@ -14,6 +14,7 @@ export function ButtonMain({
     secondary: `flex items-center mt-6 px-4 py-2 w-10/12 rounded-md border-transparent bg-slate-300 shadow-sm ${variant}`,
     plain: `flex items-center bg-transparent ${variant}`,
     back: 'absolute top-12 left-5 rounded-full border-transparent bg-transparent p-1.5 z-10',
+    circle: `flex justify-center items-center w-40 h-40 rounded-full border-4 border-slate-300 bg-blue-600 ${variant}`,
     logout:
       'absolute top-12 right-5 rounded-full border-transparent bg-transparent p-1.5 z-10',
   };
@@ -29,6 +30,8 @@ export function ButtonMain({
             ? baseStyle.back
             : type === 'logout'
             ? baseStyle.logout
+            : type === 'circle'
+            ? baseStyle.circle
             : baseStyle.secondary
         }`
       )}

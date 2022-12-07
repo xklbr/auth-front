@@ -5,11 +5,15 @@ import { BarCodeScanner } from 'expo-barcode-scanner';
 import tw from 'twrnc';
 
 import { getEmployeeByIdThunk } from 'features/employee';
+import { ButtonMain } from 'components';
 
 export function QRCodeScanner() {
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
   const dispatch = useDispatch();
+
+  console.log('scanned', scanned);
+  console.log('setScanned', setScanned);
 
   useEffect(() => {
     (async () => {
@@ -46,7 +50,14 @@ export function QRCodeScanner() {
         style={StyleSheet.absoluteFillObject}
       />
       {scanned && (
-        <Button title={'Tap to scan again'} onPress={() => setScanned(false)} />
+        <View style={tw.style('w-full flex items-center')}>
+          <ButtonMain
+            title="Tap to scan again"
+            type="circle"
+            textVariant="text-slate-300 text-center"
+            onPress={() => setScanned(false)}
+          />
+        </View>
       )}
     </View>
   );

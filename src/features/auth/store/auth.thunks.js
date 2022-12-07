@@ -28,7 +28,6 @@ export function authRegisterThunk({ email, password, fullName }) {
     dispatch(statusRegister('successful'));
     dispatch(register(authRegister));
     successToast();
-    console.log('THUNK', authRegister);
   };
 }
 

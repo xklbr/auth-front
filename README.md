@@ -16,24 +16,24 @@ To run the project, it is necessary to have Xcode installed on Mac OS for the io
 I share 3 credentials with different **status** and **roles** for testing purposes.
 
 ```
-email: althea63@yahoo.com
-password: 7KELT2*63BXZkxZg
-fullname: Lillian Gerhold
-status: Active
+email: 'althea63@yahoo.com'
+password: '7KELT2*63BXZkxZg'
+fullname: 'Lillian Gerhold'
+status: 'Active'
 roles: {User}
 ```
 ```
 email: 'weldon.monahan35@yahoo.com',
 password: 'ZocxKL*6EVdH2bIo',
 fullname: Lillian Gerhold
-status: Inactive
+status: 'Inactive'
 roles: {User}
 ```
 ```
-email: rylee.moore40@yahoo.com
-password: 8hrvuD*AaYmIFIan
-fullname: Lewis Price
-status: Active
+email: 'rylee.moore40@yahoo.com'
+password: '8hrvuD*AaYmIFIan'
+fullname: 'Lewis Price'
+status: 'Active'
 roles: {Admin}
 ```
 ### API
